@@ -1,0 +1,8 @@
+sim/
+waveforms/
+*.vvp
+*.vcd
+*.jou
+*.log
+*.str
+*.tmp
