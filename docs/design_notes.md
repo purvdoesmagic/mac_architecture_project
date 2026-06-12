@@ -79,3 +79,71 @@ Observations:
 - Signed magnitude conversion correctly handles two's-complement edge cases
 - Parameterization works across widths
 - Architecture will serve as the baseline multiplier for V1 MAC implementation
+
+## Week 1 Summary
+
+Verified Modules:
+
+- adder_rca
+- accumulator
+- multiplier_array
+- mac_top
+
+Verification Status:
+
+- Simulation passed
+- Directed testing passed
+- Waveforms reviewed
+
+Verification Metrics:
+
+- adder_rca: 16 directed tests passed
+- accumulator: all directed tests passed
+- multiplier_array: all directed tests passed
+- mac_top: all integration tests passed
+
+Waveforms:
+
+- tb_adder_rca.vcd
+- tb_accumulator.vcd
+- tb_multiplier_array.vcd
+- tb_mac_top.vcd
+
+Architecture Status:
+
+- V1 baseline architecture complete
+
+Next Phase:
+
+- Run synthesis on V1
+- Collect area metrics
+- Collect timing metrics
+- Begin V2 implementation
+
+---
+
+## Week 1 — mac_top (V1 Integration)
+
+Completed:
+- Integrated multiplier_array and accumulator
+- Created baseline V1 MAC datapath
+- WIDTH = 8 verified
+- WIDTH = 16 verified
+- Directed integration testbench created
+- VCD generation enabled
+
+Verification:
+- Positive multiplication accumulation verified
+- Negative multiplication accumulation verified
+- Multi-cycle accumulation verified
+- Hold behavior verified
+- Reset behavior verified
+- Positive overflow verified
+- Negative overflow verified
+- Sticky overflow verified
+
+Observations:
+- Module interfaces integrated cleanly
+- Accumulator overflow policy behaves as intended
+- Baseline V1 architecture ready for synthesis
+

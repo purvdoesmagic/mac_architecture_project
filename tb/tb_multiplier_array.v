@@ -129,6 +129,10 @@ module tb_multiplier_array;
         #1;
 
         check8(8'sd0,        8'sd57,        16'sd0,                  "zero times positive");
+        check8(8'sd1,        8'sd1,         16'sd1,                  "one times one");
+        check8(-8'sd1,      -8'sd1,         16'sd1,                  "negative one times negative one");
+        check8(8'sd1,       -8'sd1,        -16'sd1,                  "one times negative one");
+        check8(-8'sd1,       8'sd1,        -16'sd1,                  "negative one times one");
         check8(8'sd12,       8'sd11,        16'sd132,                "positive times positive");
         check8(-8'sd12,      8'sd11,       -16'sd132,                "negative times positive");
         check8(8'sd12,      -8'sd11,       -16'sd132,                "positive times negative");

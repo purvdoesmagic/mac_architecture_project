@@ -1,0 +1,18 @@
+# V1 baseline synthesis script
+# Top: mac_top
+# Architecture: Array Multiplier + Accumulator
+
+read_verilog rtl/adder_rca.v
+read_verilog rtl/accumulator.v
+read_verilog rtl/multiplier_array.v
+read_verilog rtl/mac_top.v
+
+hierarchy -check -top mac_top
+
+proc
+opt
+memory
+techmap
+clean
+
+stat
