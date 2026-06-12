@@ -54,3 +54,28 @@ Observations:
 - Parameterization works across widths
 - Freezing the accumulator after overflow prevents propagation of invalid accumulated results
 - Design is suitable as the common accumulator block for all future MAC architecture variants
+
+---
+
+## Week 1 — multiplier_array
+
+Completed:
+- Parameterized array multiplier
+- Signed multiplication support
+- Shift-and-add partial product generation
+- WIDTH = 8/16/32 verified
+- Directed testbench created
+- VCD generation enabled
+
+Verification:
+- Positive × Positive
+- Positive × Negative
+- Negative × Positive
+- Negative × Negative
+- Boundary condition testing completed
+- All test cases passed
+
+Observations:
+- Signed magnitude conversion correctly handles two's-complement edge cases
+- Parameterization works across widths
+- Architecture will serve as the baseline multiplier for V1 MAC implementation
