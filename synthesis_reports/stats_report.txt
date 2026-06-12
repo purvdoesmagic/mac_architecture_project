@@ -1,0 +1,88 @@
+
+11. Printing statistics.
+
+=== $paramod\multiplier_array\WIDTH=s32'00000000000000000000000000001000 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       32 wires
+      433 wire bits
+       12 public wires
+      145 public wire bits
+        3 ports
+       32 port bits
+       25 cells
+       10   $add
+       11   $mux
+        3   $not
+        1   $xor
+
+=== $paramod$7e12df99be1db7df5394382489cfc1918a0dcf9b\accumulator ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       16 wires
+       61 wire bits
+        8 public wires
+       53 public wire bits
+        6 ports
+       36 port bits
+       12 cells
+        1   $add
+        1   $eq
+        1   $logic_and
+        3   $mux
+        1   $ne
+        2   $not
+        1   $reduce_and
+        1   $sdff
+        1   $sdffe
+
+=== mac_top ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        8 wires
+       52 wire bits
+        8 public wires
+       52 public wire bits
+        7 ports
+       36 port bits
+        2 submodules
+        1   $paramod$7e12df99be1db7df5394382489cfc1918a0dcf9b\accumulator
+        1   $paramod\multiplier_array\WIDTH=s32'00000000000000000000000000001000
+
+=== design hierarchy ===
+
+        +----------Count including submodules.
+        | 
+       37 mac_top
+       12 $paramod$7e12df99be1db7df5394382489cfc1918a0dcf9b\accumulator
+       25 $paramod\multiplier_array\WIDTH=s32'00000000000000000000000000001000
+
+        +----------Count including submodules.
+        | 
+       56 wires
+      546 wire bits
+       28 public wires
+      250 public wire bits
+       16 ports
+      104 port bits
+        - memories
+        - memory bits
+        - processes
+       37 cells
+       11   $add
+        1   $eq
+        1   $logic_and
+       14   $mux
+        1   $ne
+        5   $not
+        1   $reduce_and
+        1   $sdff
+        1   $sdffe
+        1   $xor
+        2 submodules
+        1   $paramod$7e12df99be1db7df5394382489cfc1918a0dcf9b\accumulator
+        1   $paramod\multiplier_array\WIDTH=s32'00000000000000000000000000001000
+

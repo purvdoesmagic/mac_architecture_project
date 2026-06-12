@@ -1,0 +1,14 @@
+
+10. Executing HIERARCHY pass (managing design hierarchy).
+Attribute `top' found on module `mac_top'. Setting top module to mac_top.
+
+10.1. Analyzing design hierarchy..
+Top module:  \mac_top
+Used module:     $paramod$7e12df99be1db7df5394382489cfc1918a0dcf9b\accumulator
+Used module:     $paramod\multiplier_array\WIDTH=s32'00000000000000000000000000001000
+
+10.2. Analyzing design hierarchy..
+Top module:  \mac_top
+Used module:     $paramod$7e12df99be1db7df5394382489cfc1918a0dcf9b\accumulator
+Used module:     $paramod\multiplier_array\WIDTH=s32'00000000000000000000000000001000
+Removed 0 unused modules.

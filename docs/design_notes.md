@@ -147,3 +147,31 @@ Observations:
 - Accumulator overflow policy behaves as intended
 - Baseline V1 architecture ready for synthesis
 
+---
+
+## Week 2 — V1 Synthesis Results
+
+Tool:
+- Yosys
+
+Top Module:
+- mac_top
+
+Synthesis Statistics:
+
+| Metric | Value |
+|----------|----------|
+| Total Cells | 37 |
+| Total Wires | 56 |
+| Wire Bits | 546 |
+
+Multiplier:
+- 25 cells
+
+Accumulator:
+- 12 cells
+
+Observations:
+- V1 MAC synthesizes successfully
+- Baseline architecture established
+- Area and timing improvements will be compared against this version
