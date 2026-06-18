@@ -1,0 +1,14 @@
+read_verilog rtl_v2/adder_cla.v
+read_verilog rtl_v2/accumulator_v2.v
+read_verilog rtl_v2/multiplier_booth.v
+read_verilog rtl_v2/mac_top_v2.v
+
+hierarchy -check -top mac_top_v2
+
+proc
+opt
+memory
+techmap
+clean
+
+stat

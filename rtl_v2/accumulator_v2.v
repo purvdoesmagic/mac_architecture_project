@@ -16,13 +16,19 @@ module accumulator_v2
 );
 
     wire signed [ACC_WIDTH-1:0] next_acc;
-    wire                        overflow_detected;
+wire                        overflow_detected;
 
-    assign next_acc = acc_out + product_in;
-
-    // Signed overflow: same-sign operands produce a result with opposite sign.
-    assign overflow_detected = (acc_out[ACC_WIDTH-1] == product_in[ACC_WIDTH-1]) &&
-                               (next_acc[ACC_WIDTH-1] != acc_out[ACC_WIDTH-1]);
+adder_cla
+#(
+    .WIDTH(ACC_WIDTH)
+)
+u_adder_cla
+(
+    .a(acc_out),
+    .b(product_in),
+    .sum(next_acc),
+    .overflow(overflow_detected)
+);
 
     always @(posedge clk) begin
         if (rst) begin
