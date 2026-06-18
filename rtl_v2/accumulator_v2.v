@@ -1,7 +1,7 @@
 `default_nettype none
 `timescale 1ns/1ps
 
-module accumulator
+module accumulator_v2
 #(
     parameter WIDTH = 8,
     parameter ACC_WIDTH = (2*WIDTH)
