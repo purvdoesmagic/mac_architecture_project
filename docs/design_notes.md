@@ -175,3 +175,27 @@ Observations:
 - V1 MAC synthesizes successfully
 - Baseline architecture established
 - Area and timing improvements will be compared against this version
+
+---
+
+## Week 3 – CLA Adder
+
+- Implemented parameterized carry lookahead adder
+- Verified overflow detection
+- Generated waveform validation
+
+---
+
+## Week 4 – Booth Multiplier
+
+- Implemented signed Booth multiplier
+- Fixed -128 × 127 corner case
+- Verified signed arithmetic behavior
+
+---
+
+## Week 5 – V2 MAC Integration
+
+- Integrated Booth multiplier and CLA accumulator
+- Verified MAC operation
+- Completed synthesis
