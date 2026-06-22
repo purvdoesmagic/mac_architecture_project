@@ -7,8 +7,5 @@ hierarchy -check -top mac_top_v2
 
 proc
 opt
-memory
-techmap
-clean
 
 stat
