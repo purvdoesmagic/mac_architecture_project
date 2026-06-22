@@ -199,3 +199,44 @@ Observations:
 - Integrated Booth multiplier and CLA accumulator
 - Verified MAC operation
 - Completed synthesis
+
+---
+
+### Verification
+
+- CLA adder verified through directed testing
+- Booth multiplier verified through directed testing
+- Corner case (-128 × 127) verified
+- MAC_TOP_V2 integration testbench created
+- Multi-cycle accumulation verified
+- Signed arithmetic verified
+- Functional simulation passed
+
+### Synthesis Results
+
+Tool:
+- Yosys
+
+Top Module:
+- mac_top_v2
+
+| Metric | Value |
+|----------|----------|
+| Total Cells | 110 |
+| Total Wires | 71 |
+| Total Wire Bits | 593 |
+
+### Architecture
+
+- Booth Multiplier
+- CLA Adder
+- Accumulator V2
+
+### Observations
+
+- V2 synthesizes successfully
+- CLA integrated into accumulation datapath
+- Booth multiplier synthesizes correctly
+- Functional verification matches expected results
+- V2 introduces additional logic resources compared to V1
+- V2 architecture is ready for FPGA implementation
